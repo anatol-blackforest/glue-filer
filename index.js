@@ -1,4 +1,4 @@
-// Создайте приложение, реализуйте возможность чтения и записи файлов.
+// Склейка двух файлов
 const fs = require("fs")
 const path = require("path")
 
@@ -30,8 +30,8 @@ module.exports = (firstFile, secondFile, resultFile) => {
 
 	writeStream.on("finish", () => console.log("file writed!"))
 
-	readStream1.on('error', err => console.log(err)); 
-	readStream2.on('error', err => console.log(err)); 
-	writeStream.on('error', err => console.log(err)); 
+	readStream1.on('error', err => console.log(err))
+	readStream2.on('error', err => console.log(err))
+	writeStream.on('error', err => console.log(err))
 
 }
