@@ -1,0 +1,11 @@
+{
+  "name": "gluefiler",
+  "version": "1.0.0",
+  "description": "2 files to 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "blackforest",
+  "license": "ISC"
+}
