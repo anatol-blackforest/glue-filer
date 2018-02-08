@@ -18,9 +18,7 @@ module.exports = (firstFile, secondFile, resultFile) => {
 
 	readStream1.on("end", () => {
 	    console.log("file 1 readed!")
-		readStream2.on("data", chunk => {
-			writeStream.write(chunk)
-		})
+		readStream2.on("data", chunk => writeStream.write(chunk))
 	})
 
 	readStream2.on("end", () => {
